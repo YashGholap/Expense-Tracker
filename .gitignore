@@ -1,0 +1,3 @@
+app/.env
+app/expense_tracker.db
+venv/
