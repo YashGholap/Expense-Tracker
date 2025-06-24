@@ -26,4 +26,34 @@ frappe.pages['expense-dashboard'].on_page_load = function(wrapper) {
             console.error("❌ Backend error:", err);
         }
     });
+
+    frappe.call({
+        method: "expense_tracker.expense_tracker.page.expense_dashboard.expense_dashboard.get_expense_by_category",
+        callback: function(r) {
+            if(r.message && r.message.length){
+                const labels = r.message.map(row => row.category);
+                const values = r.message.map(row => row.total);
+
+                new frappe.Chart("#chart-area",{
+                    title: "Expenses by Category",
+                    data : {
+                        labels: labels,
+                        datasets: [{ values: values }]
+                    },
+                    type: 'pie',
+                    height: 350
+                });
+            }else{
+                $('#chart-area').html("<p>No expenses found.</p>");
+            }
+        },
+        error: function(err){
+            console.error("Chart load failed: ", err);
+            $("#chart-area").html("<p> Error Loading Chart.</p>")
+        }
+    });
+
+    page.add_inner_button("Manage All Expenses", () => {
+    frappe.set_route("List", "Expense");
+    });
 };
