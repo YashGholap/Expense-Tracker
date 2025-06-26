@@ -1,0 +1,19 @@
+{
+ "content": null,
+ "creation": "2025-06-23 22:14:26.660813",
+ "docstatus": 0,
+ "doctype": "Page",
+ "idx": 0,
+ "modified": "2025-06-23 22:14:26.660813",
+ "modified_by": "Administrator",
+ "module": "Expense Tracker",
+ "name": "expense-dashboard",
+ "owner": "Administrator",
+ "page_name": "expense-dashboard",
+ "roles": [],
+ "script": "expense_tracker/public/js/expense_dashboard.js",
+ "standard": "Yes",
+ "style": null,
+ "system_page": 0,
+ "title": "Expense Dashboard"
+}

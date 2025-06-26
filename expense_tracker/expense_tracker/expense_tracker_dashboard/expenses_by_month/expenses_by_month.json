@@ -1,0 +1,22 @@
+{
+ "cards": [],
+ "chart_options": "{\r\n  \"colors\": [\"#1f77b4\", \"#ff7f0e\"]\r\n}\r\n",
+ "charts": [
+  {
+   "chart": "Expense by Month",
+   "width": "Full"
+  }
+ ],
+ "creation": "2025-06-26 12:53:36.322285",
+ "dashboard_name": "Expenses by Month",
+ "docstatus": 0,
+ "doctype": "Dashboard",
+ "idx": 0,
+ "is_default": 0,
+ "is_standard": 1,
+ "modified": "2025-06-26 12:53:36.322285",
+ "modified_by": "Administrator",
+ "module": "Expense Tracker",
+ "name": "Expenses by Month",
+ "owner": "Administrator"
+}
