@@ -13,7 +13,8 @@
  "idx": 0,
  "is_public": 0,
  "is_standard": 1,
- "modified": "2025-06-26 12:52:31.112730",
+ "last_synced_on": "2025-06-26 22:13:02.591335",
+ "modified": "2025-06-26 22:13:22.699331",
  "modified_by": "Administrator",
  "module": "Expense Tracker",
  "name": "Expense by Month",
@@ -29,7 +30,7 @@
  "time_interval": "Weekly",
  "timeseries": 1,
  "timespan": "Last Month",
- "type": "Bar",
+ "type": "Pie",
  "use_report_chart": 0,
  "value_based_on": "amount",
  "y_axis": []
